@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Surprise 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" onclick="toggleMusic()">
+    🎵 Music
+</button>
+
+    <div class="hearts"></div>
+
+    <!-- WINDOW 1 -->
+    <section class="window active" id="window1">
+        <div class="card">
+            <div class="emoji">😁</div>
+            <h1>Topper gaaru!👀</h1>
+            <p>Ni kosame nen idhi chesina endhuku anak nak kuda thelvadh!          Music ON cheyi pyna</p>
+            <button onclick="nextWindow()">Jeldhi Open Karo 💝</button>
+        </div>
+    </section>
+
+
+    <!-- WINDOW 2 -->
+    <section class="window" id="window2">
+        <div class="card">
+            <div class="emoji">✋</div>
+            <h1>Aagu!</h1>
+            <p>Yevvaru leru ga pakkana🧐</p>
+            <p>Chala vunnay lopala dhaacham kuppalu kuppaluga nijam cheppali ante anni em lev</p>
+            <button onclick="nextWindow()">Ikkada click cheyandi →</button>
+        </div>
+    </section>
+
+
+    <!-- WINDOW 3 -->
+<section class="window" id="window3">
+
+    <div class="memory-card">
+
+        <div class="emoji">📸</div>
+
+        <h1>Manam dhigina photos ❤️,Memories😄</h1>
+
+        <p class="memory-subtitle">
+            Tap a photo to see images ❤️
+        </p>
+
+        <div class="gallery">
+
+            <img src="images/img1.jpeg"
+                 alt="Memory 1"
+                 onclick="openPhoto(this.src)">
+
+            <img src="images/img2.jpeg"
+                 alt="Memory 2"
+                 onclick="openPhoto(this.src)">
+
+            <img src="images/img3.jpeg"
+                 alt="Memory 3"
+                 onclick="openPhoto(this.src)">
+
+        </div>
+
+        <p class="memory-text">
+            Okkati kuda sakkaga vundadh anuko kani nuv vunnav kabatti nak nachuthay ❤️       
+            Sakkaga kanpiyakapothe click cheyi open ithay photos
+        </p>
+
+        <button onclick="nextWindow()">
+            Inkokkati vundhi last →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PHOTO VIEWER -->
+<div id="photoViewer">
+
+    <button class="backButton" onclick="closePhoto()">
+        ← Back
+    </button>
+
+    <img id="fullPhoto" src="" alt="Full photo">
+
+</div>
+
+    <!-- WINDOW 4 -->
+    <section class="window" id="window4">
+        <div class="card">
+            <div class="emoji">💌</div>
+            <h1>Oka chinna message</h1>
+
+            <p class="message">
+                Ante message ante emledhu 😅 ahhh Nuv ante nak masth istam masth ante masth not only istam Love Ishq🫶
+            </p>
+
+            <p>
+                Asal messege endhi ante.... I Love You ❤️😁
+            </p>
+
+            <button onclick="nextWindow()">Last idhey inga 🎀→</button>
+        </div>
+    </section>
+
+
+    <!-- WINDOW 5 -->
+    <section class="window" id="window5">
+        <div class="card final">
+            <div class="emoji big">🎉</div>
+
+            <h1>Hey Topper! </h1>
+
+            <p class="big-text">
+                Happy Birthday My Dear Mardhal❤️😘
+            </p>
+
+            <p>
+                Ipoyindhi inga mala chepthuna Happy Birthday Topper gaaru Love you soooo much
+            </p>
+
+            <div class="stars">
+                ✨ 💖 ✨ 💖 ✨
+            </div>
+
+            <button onclick="restart()">Mala chudali anukunte sudandi 🔄</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
